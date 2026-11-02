@@ -109,6 +109,8 @@
   const status = document.getElementById('book-status');
   const more = document.getElementById('book-more');
   let books=[],limit=36,loaded=false,loading=false;
+  function enableFilters(enabled) { [classFilter,sessionFilter,search].forEach(control=>{control.disabled=!enabled;}); }
+  enableFilters(false);
   function drawBooks() {
     const q=search.value.trim().toLocaleLowerCase();
     const filtered=books.filter(b=>(!classFilter.value || String(b.class)===classFilter.value) && (!sessionFilter.value || b.session===sessionFilter.value) && (!q || (b.title+' '+b.session+' class '+b.class).toLocaleLowerCase().includes(q)));
@@ -136,10 +138,10 @@
       if (!response.ok || !Array.isArray(data.books) || !data.books.length) throw Error('unavailable');
       books=data.books.filter(b=>{try{return ['http:','https:'].includes(new URL(b.url).protocol);}catch{return false;}});
       [...new Set(books.map(b=>b.session))].sort().reverse().forEach(s=>{const option=document.createElement('option');option.value=s;option.textContent=s;sessionFilter.append(option);});
-      loaded=true;drawBooks();
+      loaded=true;enableFilters(true);drawBooks();
       const failed=data.sources.filter(s=>!s.available);
-      document.getElementById('book-sync').textContent=(data.stale?'Showing the last available list. ':'')+'Catalogue checked: '+new Intl.DateTimeFormat('en-IN',{dateStyle:'medium',timeZone:'Asia/Kolkata'}).format(new Date(data.checkedAt))+'. '+(failed.length?'Some PSEB session pages could not be read; use their official links below.':'Links collected from all listed PSEB session pages.');
-    } catch {status.textContent='PSEB’s live book list could not be loaded right now. Use the official session links below to open and download books directly.';}
+      document.getElementById('book-sync').textContent=(data.stale?'Showing the last available list. ':'')+'Catalogue checked: '+new Intl.DateTimeFormat('en-IN',{dateStyle:'medium',timeZone:'Asia/Kolkata'}).format(new Date(data.checkedAt))+'. '+(failed.length?'Some PSEB session pages could not be read; use their official links above.':'Links collected from all listed PSEB session pages.');
+    } catch {enableFilters(false);status.textContent='The searchable book list is unavailable because PSEB is not allowing this connection. Open an official session catalogue above to choose your class and download its books.';}
     finally {loading=false;}
   }
   document.getElementById('book-retry').addEventListener('click',()=>{if(!loading){loaded=false;books=[];sessionFilter.length=1;loadBooks();}});
