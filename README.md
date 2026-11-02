@@ -1,6 +1,6 @@
 # Government Senior Secondary School, Sito Gunno
 
-Static school website extracted from the supplied code document. No build step or npm dependencies.
+School information pages plus an interactive Excalidraw-powered Classroom Studio. Run npm ci then npm run build; deploy the generated dist folder using the included Vercel settings.
 
 ## Photographs
 
@@ -41,3 +41,20 @@ Live verification: Vercel deployed successfully; PSEB returned HTTP 403 for auto
 ## Visual design
 
 Redesigned with an original editorial layout inspired by the Anthracite Studio reference: oversized serif typography, monospace labels, pixel details, generous spacing and restrained reveal motion. The school retains its black and royal-orange palette, school-supplied photos and existing features. Fonts use Google Fonts with local system fallbacks. Motion respects reduced-motion preferences. No reference logos, artwork or source code are reused.
+
+## Classroom Studio — /classroom/
+
+The studio embeds Excalidraw 0.18.1 (MIT) with its native pen, shapes, arrows, text, eraser, images, hand/pan, zoom, selection, grouping, library and undo/redo tools. Classroom additions:
+
+- Chapter title, subject and class; multiple independently editable pages with rename, duplicate and deletion.
+- Six blank lesson structures: chapter starter, mind map, comparison, Think–Pair–Share, sorting and exit ticket.
+- Deadline-based countdown timer with optional chime, random student picker without repeats, up to eight team scores, teacher-authored question/answer reveal, emoji stickers and movable notes.
+- Focus mode and full-screen controls. Native drawing toolbar translations: English, Punjabi and Hindi.
+- IndexedDB autosave for one current lesson in the same browser. Download an editable .classroom.json backup containing every page and its embedded images; restore it on another computer.
+- Current-page PNG, SVG, .excalidraw and browser Print / Save as PDF exports. A lesson backup is the multi-page editable format. Print/PDF exports one page at a time.
+
+This is a local, shared-device classroom tool. It does not implement real-time collaboration, student logins, an AI backend, or guaranteed offline first-load. Teacher roster names and drawings stay local unless the teacher downloads or shares a file. Browser data can be cleared or unavailable; downloadable backups are the durable save option. Native Excalidraw exports differ from Classroom Studio backups.
+
+Build: Node 20+; npm ci, npm test, npm run build. Vite builds only the studio, copies existing school pages into dist, and self-hosts the Excalidraw fonts. The existing api/books.js remains a Vercel function.
+
+Validation: model tests cover editable multi-page round trips including image bytes and Unicode, invalid imports, independent duplication, private transient-state stripping, picker fairness, timer deadlines and six template structures. The production bundle is compiled locally before publication.
