@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Campus life | G2 Plus</title>
+<title>Campus life | GSSS Sito Gunno</title>
 <meta name="description" content="Government Senior Secondary School Sito Gunno, Fazilka. School information, staff, enrolment and campus photographs.">
 <link rel="stylesheet" href="/style.css">
 </head>
@@ -12,11 +12,11 @@
 <header>
 <div class="nav">
 <a class="brand" href="/">
-<span class="mark">G²</span>
+<span class="mark" aria-hidden="true">SG</span>
 <span>
-<strong>G2 Plus<span style="color:var(--orange)">.</span>
+<strong>GSSS Sito Gunno<span style="color:var(--orange)">.</span>
 </strong>
-<small>GSSS SITO GUNNO</small>
+<small>LEARN · PARTICIPATE · GROW</small>
 </span>
 </a>
 <button class="menu" aria-controls="navigation" aria-expanded="false">Menu ☰</button>
@@ -34,7 +34,7 @@
 <h1>Our campus.<br>
 <em>Our everyday stories.</em>
 </h1>
-<p class="lead">A visual walk through Sito Gunno’s school spaces, shared activities, and places to learn. Photographs supplied by the school.</p>
+<p class="lead">A visual walk through Sito Gunno’s school spaces, shared activities, and places to learn. Photographs supplied by the school.</p><div class="actions"><a class="btn light" href="#facilities">Labs &amp; facilities ↓</a></div>
 </section>
 <div class="wide-banner">
 <img src="/assets/school-1.jpg" alt="School classroom building">
@@ -43,6 +43,17 @@
 <h2>More than classrooms.<br>A shared sense of belonging.</h2>
 </div>
 </div>
+<section id="facilities" aria-labelledby="facilities-heading">
+<div class="eyebrow">Spaces for learning, wellbeing &amp; sport</div>
+<h2 id="facilities-heading">Room to learn. Space to grow.</h2>
+<p>Our school facilities support academic study, vocational training, meals, and outdoor activities.</p>
+<div class="cards facility-grid">
+<article class="card"><span class="number">PRACTICAL LEARNING</span><h3>Four vocational labs</h3><ul class="facility-list"><li>Beauty &amp; Wellness Lab</li><li>Security Lab</li><li>IT Lab</li><li>Retail Lab</li></ul><a href="/school.html#vocational">Explore NSQF trades →</a></article>
+<article class="card"><span class="number">ACADEMIC SPACES</span><h3>Labs &amp; classrooms</h3><ul class="facility-list"><li>Computer Lab</li><li>Science Lab</li><li>Biology Lab</li><li>Chemistry Lab</li><li>Physics Lab</li><li>Two Commerce Rooms</li></ul></article>
+<article class="card"><span class="number">DAILY SCHOOL LIFE</span><h3>Meals &amp; community</h3><ul class="facility-list"><li>Kitchen</li><li>Dining Shed</li></ul><p>A dedicated place for preparing and sharing school meals.</p></article>
+<article class="card"><span class="number">PLAY &amp; PARTICIPATE</span><h3>Outdoor facilities</h3><ul class="facility-list"><li>Playground</li><li>Basketball Court</li><li>Volleyball Ground</li><li>Badminton Ground</li></ul></article>
+</div>
+</section>
 <section>
 <div class="section-head">
 <div>
@@ -129,7 +140,7 @@
 <footer>
 <div class="wrap foot">
 <div>
-<strong>G2 Plus<span style="color:var(--orange)">.</span>
+<strong>GSSS Sito Gunno<span style="color:var(--orange)">.</span>
 </strong>
 <small>Government Senior Secondary School, Sito Gunno</small>
 </div>
@@ -141,6 +152,7 @@
 <a href="https://epunjabschool.gov.in/" target="_blank" rel="noopener">ePunjabSchool ↗</a>
 <a href="https://www.pseb.ac.in/" target="_blank" rel="noopener">PSEB ↗</a>
 </div>
+<div class="wrap developer-credit">Developed by <strong>Sunaina Rani</strong>, Computer Faculty</div>
 </footer>
 <script>const menu=document.querySelector('.menu'),nav=document.querySelector('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));const dialog=document.querySelector('dialog');document.querySelectorAll('.open-photo').forEach(button=>button.addEventListener('click',()=>{document.getElementById('large-photo').src=button.dataset.src;document.getElementById('large-photo').alt=button.dataset.caption;document.getElementById('photo-title').textContent=button.dataset.caption;dialog.showModal()}));document.getElementById('close-photo').addEventListener('click',()=>dialog.close());document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));let count=0;document.querySelectorAll('[data-category]').forEach(card=>{card.hidden=button.dataset.filter!=='All'&&card.dataset.category!==button.dataset.filter;if(!card.hidden)count++});document.getElementById('photo-count').textContent=`Showing ${count} photographs`;}));</script>
 </body>

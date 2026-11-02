@@ -1,4 +1,4 @@
-# G2 Plus — GSSS Sito Gunno
+# Government Senior Secondary School, Sito Gunno
 
 Static school website extracted from the supplied code document. No build step or npm dependencies.
 
@@ -18,3 +18,11 @@ In Vercel, import that GitHub repository. Choose Framework Preset: Other, leave 
 vercel.json enables clean URLs: /school and /campus. The staff link is /school#staff. The original .html links remain supported by Vercel clean URL handling.
 
 Staff filtering, class filtering, mobile navigation and campus photo dialogs use browser JavaScript. No backend or environment variables are required.
+
+## School offerings
+
+Academic streams: Non-Medical, Medical, Commerce, Humanities.
+NSQF trades: Beauty & Wellness, Security, IT, Retail; one dedicated lab per trade.
+Campus: Computer Lab, Science Lab, Biology Lab, Chemistry Lab, Physics Lab, two Commerce Rooms, Kitchen, Dining Shed, Playground, Basketball Court, Volleyball Ground, Badminton Ground.
+
+Developed by Sunaina Rani, Computer Faculty.

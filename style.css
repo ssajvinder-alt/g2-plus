@@ -163,3 +163,11 @@ section{padding:45px 0}
 }
 
 
+
+/* School identity, programmes and facilities */
+.brand{flex-shrink:0}.brand strong{font-size:21px;letter-spacing:-.5px}.mark{flex-shrink:0}
+.programme-grid,.facility-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.facility-list{padding-left:20px;color:var(--muted);font-size:15px;line-height:2}
+.developer-credit{padding-top:20px;padding-bottom:24px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center}
+.developer-credit strong{color:var(--gold)}
+@media(max-width:600px){.programme-grid,.facility-grid{grid-template-columns:1fr}.brand strong{font-size:18px}.brand small{font-size:8px;letter-spacing:1px}}
