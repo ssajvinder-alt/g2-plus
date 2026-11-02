@@ -38,6 +38,7 @@
 <div class="actions">
 <a class="btn" href="/school.html">Meet our school ↗</a>
 <a class="btn light" href="/campus.html">Explore campus →</a>
+<a class="inline" href="#student-hub">Thought of the day &amp; e-books ↓</a>
 </div>
 <p class="punjabi" lang="pa">ਸਰਕਾਰੀ ਸੀਨੀਅਰ ਸੈਕੰਡਰੀ ਸਕੂਲ, ਸੀਤੋ ਗੁੰਨੋ</p>
 <div class="scroll-hint">LEARN · PARTICIPATE · GROW <span class="star">✳</span>
@@ -69,6 +70,40 @@
 <span>Punjab, India</span>
 </div>
 </div>
+<section id="student-hub" aria-labelledby="hub-title">
+<div class="section-head"><div><div class="eyebrow">Your daily learning corner</div><h2 id="hub-title">A thought. A resource.<br>A new possibility.</h2></div><p>Start with encouragement, find learning support, and open your textbooks.</p></div>
+<div class="hub-tabs" role="tablist" aria-label="Student learning resources">
+<button type="button" id="thought-tab" role="tab" data-panel="thought-of-the-day" aria-controls="thought-of-the-day" aria-selected="true">Thought of the day</button>
+<button type="button" id="educare-tab" role="tab" data-panel="educare" aria-controls="educare" aria-selected="false" tabindex="-1">Punjab Educare</button>
+<button type="button" id="ebooks-tab" role="tab" data-panel="ebooks" aria-controls="ebooks" aria-selected="false" tabindex="-1">PSEB e-books</button>
+</div>
+<div id="thought-of-the-day" role="tabpanel" aria-labelledby="thought-tab" class="hub-panel thought-panel">
+<div class="eyebrow">A fresh thought for every school day</div><p id="thought-date" class="data-note"></p>
+<blockquote id="daily-thought">Ask one more question today; curiosity opens the next door.</blockquote>
+<p class="data-note">Original student encouragement · changes daily at midnight, India time.</p>
+</div>
+<div id="educare" role="tabpanel" aria-labelledby="educare-tab" class="hub-panel" hidden>
+<div class="eyebrow">Learn beyond the classroom</div><h3>Punjab Educare</h3>
+<p>Open Punjab Educare for study material, or visit its app page for the published download options.</p>
+<div class="actions"><a class="btn" href="https://www.punjabeducare.org/" target="_blank" rel="noopener">Open Punjab Educare ↗</a><a class="btn light" href="https://www.punjabeducare.org/app" target="_blank" rel="noopener">Get the Educare app ↗</a><a class="inline" href="https://www.punjabeducare.org/e-books" target="_blank" rel="noopener">Educare e-books ↗</a></div>
+</div>
+<div id="ebooks" role="tabpanel" aria-labelledby="ebooks-tab" class="hub-panel" hidden>
+<div class="eyebrow">Classes 1–12 · PSEB textbook downloads</div><h3>Find your next textbook.</h3>
+<p>Search book links published in PSEB’s session catalogues. Choose your class and session, then open a PDF to read it or save it using your browser’s download button.</p>
+<form id="book-filters" class="tools" role="search" aria-label="Find a PSEB textbook"><label for="book-class">Class</label><select id="book-class"><option value="">All classes</option><option value="1">Class 1</option><option value="2">Class 2</option><option value="3">Class 3</option><option value="4">Class 4</option><option value="5">Class 5</option><option value="6">Class 6</option><option value="7">Class 7</option><option value="8">Class 8</option><option value="9">Class 9</option><option value="10">Class 10</option><option value="11">Class 11</option><option value="12">Class 12</option></select><label for="book-session">Session</label><select id="book-session"><option value="">All sessions</option></select><label for="book-search">Book / subject</label><input id="book-search" type="search" placeholder="e.g. Maths, Punjabi, Biology"><button type="button" id="book-retry" class="btn light">Refresh list</button></form>
+<p id="book-status" class="data-note" role="status" aria-live="polite">Choose the PSEB e-books tab to load the book list.</p><p id="book-sync" class="data-note"></p>
+<div id="book-list" class="cards book-grid"></div><button type="button" id="book-more" class="btn light" hidden>Show more books</button>
+<div class="official-catalogues"><h3>Official PSEB session catalogues</h3><p>These links stay available if the searchable list cannot load. Check your teacher’s prescribed edition before choosing an older session.</p><div class="session-links"><a href="https://www.pseb.ac.in/books?catid=7" target="_blank" rel="noopener">2026–27 ↗</a>
+<a href="https://www.pseb.ac.in/books?catid=6" target="_blank" rel="noopener">2025–26 ↗</a>
+<a href="https://www.pseb.ac.in/books?catid=4" target="_blank" rel="noopener">2024–25 ↗</a>
+<a href="https://www.pseb.ac.in/books?catid=3" target="_blank" rel="noopener">2023–24 ↗</a>
+<a href="https://www.pseb.ac.in/books?catid=2" target="_blank" rel="noopener">2022–23 ↗</a>
+<a href="https://www.pseb.ac.in/books?catid=1" target="_blank" rel="noopener">2021–22 ↗</a>
+<a href="https://www.pseb.ac.in/books?catid=5" target="_blank" rel="noopener">Hunar Sikhiya Schools (HSS) ↗</a><a href="https://www.pseb.ac.in/books" target="_blank" rel="noopener">All PSEB books ↗</a></div></div>
+<p class="data-note">PDF files open on the publisher’s website. Availability and editions depend on PSEB. For personal educational use; do not reproduce textbooks for sale.</p>
+</div>
+<noscript><p>Enable JavaScript to use the tabs, daily thought, and searchable list. You can still use the <a href="https://www.pseb.ac.in/books" target="_blank" rel="noopener">official PSEB book catalogue</a> and <a href="https://www.punjabeducare.org/app" target="_blank" rel="noopener">Punjab Educare app page</a>.</p></noscript>
+</section>
 <section id="opportunities">
 <div class="eyebrow">Learning at Sito Gunno</div><h2>Find your path. Build your skills.</h2>
 <div class="cards">
@@ -135,6 +170,8 @@
 <div>
 <small>UDISE code</small>03210102202</div>
 <div>
+<small>Official email</small><a href="mailto:fzk.gsss.sitoguno@punjabeducation.gov.in">fzk.gsss.sitoguno@punjabeducation.gov.in</a></div>
+<div>
 <small>Before you visit</small>Confirm office hours locally before travelling.</div>
 </div>
 </section>
@@ -154,8 +191,10 @@
 <a href="https://epunjabschool.gov.in/" target="_blank" rel="noopener">ePunjabSchool ↗</a>
 <a href="https://www.pseb.ac.in/" target="_blank" rel="noopener">PSEB ↗</a>
 </div>
+<div class="wrap school-contact"><span>Official school email</span><a href="mailto:fzk.gsss.sitoguno@punjabeducation.gov.in">fzk.gsss.sitoguno@punjabeducation.gov.in</a><a href="/#student-hub">Student hub →</a></div>
 <div class="wrap developer-credit">Developed by <strong>Sunaina Rani</strong>, Computer Faculty</div>
 </footer>
 <script>const menu=document.querySelector('.menu'),nav=document.querySelector('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));</script>
+<script src="/student-hub.js" defer></script>
 </body>
 </html>

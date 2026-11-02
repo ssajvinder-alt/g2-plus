@@ -171,3 +171,18 @@ section{padding:45px 0}
 .developer-credit{padding-top:20px;padding-bottom:24px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center}
 .developer-credit strong{color:var(--gold)}
 @media(max-width:600px){.programme-grid,.facility-grid{grid-template-columns:1fr}.brand strong{font-size:18px}.brand small{font-size:8px;letter-spacing:1px}}
+
+/* Student hub and official contact */
+.school-contact{display:flex;align-items:center;gap:12px 22px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px;font-size:13px}
+.school-contact span{color:var(--muted)}.school-contact a{color:var(--gold)}
+.school-contact a,.visit-details a{overflow-wrap:anywhere}
+.hub-tabs{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}
+.hub-tabs button{background:transparent;border:1px solid var(--line);border-radius:4px;padding:13px 20px;color:var(--text)}
+.hub-tabs button[aria-selected="true"]{background:var(--orange);color:#18100a;border-color:var(--orange);font-weight:bold}
+.hub-panel{border:1px solid var(--line);background:var(--panel);padding:30px;border-radius:6px}
+.thought-panel{background:linear-gradient(125deg,#2e2115,#191817);border-left:4px solid var(--orange)}
+.thought-panel blockquote{font:clamp(25px,3.1vw,40px)/1.4 Georgia,serif;margin:20px 0;max-width:900px;color:var(--text)}
+.book-card{display:flex;flex-direction:column}.book-card h3{font-size:23px;overflow-wrap:anywhere}.book-card a{margin-top:auto}
+#book-more{margin-top:24px}.official-catalogues{margin-top:35px;border-top:1px solid var(--line);padding-top:20px}
+.session-links{display:flex;flex-wrap:wrap;gap:12px}.session-links a{color:var(--gold);border:1px solid var(--line);padding:10px 14px;border-radius:4px;text-decoration:none;font-size:13px}
+@media(max-width:620px){.hub-panel{padding:20px}.hub-tabs{gap:8px}.hub-tabs button{flex:1 1 140px;padding:12px}.school-contact{align-items:start;flex-direction:column}}

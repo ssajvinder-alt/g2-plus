@@ -26,3 +26,12 @@ NSQF trades: Beauty & Wellness, Security, IT, Retail; one dedicated lab per trad
 Campus: Computer Lab, Science Lab, Biology Lab, Chemistry Lab, Physics Lab, two Commerce Rooms, Kitchen, Dining Shed, Playground, Basketball Court, Volleyball Ground, Badminton Ground.
 
 Developed by Sunaina Rani, Computer Faculty.
+
+## Student hub and contact
+
+Official school email: fzk.gsss.sitoguno@punjabeducation.gov.in.
+The home-page thought uses 60 original student messages, rotating by the calendar day in Asia/Kolkata (midnight IST). No AI service, secret or scheduled job is needed. Open pages update within one minute of midnight and when returning to the tab.
+
+The PSEB book search calls the Vercel Node function /api/books. It reads PDF links from all seven official session/HSS catalogues, groups them by class and session, and caches successful results for up to an hour at the CDN. Each source page is fetched with an 18-second timeout. Failures show the official catalogue links and partial coverage is disclosed. Books stay on their publisher's servers. Individual PDF availability is not guaranteed by indexing a catalogue. Educare links use https://www.punjabeducare.org/ and its /app page.
+
+Local preview: static pages work with python -m http.server; live book search requires Vercel functions (or a compatible local development environment). Source checks were performed on 2 November 2026.
