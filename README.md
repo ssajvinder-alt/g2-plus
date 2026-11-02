@@ -37,3 +37,7 @@ The PSEB book search calls the Vercel Node function /api/books. It reads PDF lin
 Local preview: static pages work with python -m http.server; live book search requires Vercel functions (or a compatible local development environment). Source checks were performed on 2 November 2026.
 
 Live verification: Vercel deployed successfully; PSEB returned HTTP 403 for automated catalogue requests on 2 November 2026. Direct official session links are the primary e-book interface. Search is optional and disabled when PSEB prevents retrieval. The site does not claim an exhaustive local PDF index while upstream retrieval is blocked.
+
+## Visual design
+
+Redesigned with an original editorial layout inspired by the Anthracite Studio reference: oversized serif typography, monospace labels, pixel details, generous spacing and restrained reveal motion. The school retains its black and royal-orange palette, school-supplied photos and existing features. Fonts use Google Fonts with local system fallbacks. Motion respects reduced-motion preferences. No reference logos, artwork or source code are reused.
