@@ -28,3 +28,7 @@
 .preview-arrow{position:absolute;top:55px;left:48%;font-size:55px;transform:rotate(20deg);color:#c9762f}.preview-caption{position:absolute;bottom:15px;left:20px;font:8px var(--mono);letter-spacing:1px}.preview-footer{border-bottom:0;border-top:1px solid #ddd5c9;color:#70685d;font-size:8px}
 @media(max-width:800px){.classroom-launch{gap:5%}.preview-toolbar>span:last-child{letter-spacing:2px}.preview-note{font-size:23px}.preview-board{height:270px}}
 @media(max-width:600px){.classroom-launch{grid-template-columns:1fr;gap:30px}.classroom-preview{transform:none}.preview-board{height:285px}.preview-note{font-size:26px}}
+
+/* Main navigation whiteboard entry */
+nav .whiteboard-link{color:var(--orange)}
+@media(min-width:801px) and (max-width:1050px){nav{gap:15px}nav a{font-size:10px}nav .btn{padding:11px 13px}.brand small{font-size:7px;letter-spacing:.5px}}
