@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node --test classroom/*.test.mjs"
+    "test": "node --test classroom/*.test.mjs test/*.test.cjs"
   },
   "dependencies": {
     "@excalidraw/excalidraw": "0.18.1",

@@ -58,3 +58,13 @@ This is a local, shared-device classroom tool. It does not implement real-time c
 Build: Node 20+; npm ci, npm test, npm run build. Vite builds only the studio, copies existing school pages into dist, and self-hosts the Excalidraw fonts. The existing api/books.js remains a Vercel function.
 
 Validation: model tests cover editable multi-page round trips including image bytes and Unicode, invalid imports, independent duplication, private transient-state stripping, picker fairness, timer deadlines and six template structures. The production bundle is compiled locally before publication.
+
+## E-Teacher visitor guide
+
+A bottom-screen E-Teacher button is available on the three school pages and in Classroom Studio. The panel is a local, rule-based school-information guide, not a generative AI service or a live teacher. No API key, paid model or server-side chat is used.
+
+The knowledge file uses school-provided profile, streams, four NSQF trades, facilities, professional staff details, dated enrolment totals, official email and the published classroom features. English, Punjabi and Hindi questions are matched to prepared answers; specific class counts and staff entries are read from the embedded dated school records. Responses show their source label and relevant page/resource links.
+
+Unconfirmed admissions requirements, fees, timings, exam dates, staff assignments and other missing facts are referred to the office or the official PSEB resources. Academic-resource guidance does not generate subject solutions. Contact numbers or other personal staff data are not included. Questions are held in page memory and disappear on reload or navigation; they are not sent to an AI or saved.
+
+When school details change, update eteacher-knowledge.js along with the public school pages. Official PSEB links can change, and automated access may be restricted. The guide is not connected to the live ePunjabSchool MIS.
