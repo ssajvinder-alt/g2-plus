@@ -2,9 +2,9 @@
 
 Static school website extracted from the supplied code document. No build step or npm dependencies.
 
-## Missing photographs
+## Photographs
 
-The original eight photographs were not included. Add them under assets/ using the mapping in assets/README.md before considering the visual site complete. No replacement photos have been invented.
+All eight unique school-supplied photographs are included in assets/. Duplicate uploads are omitted.
 
 ## Local preview
 
